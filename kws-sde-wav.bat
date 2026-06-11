@@ -1,0 +1,11 @@
+python .\sherpa-onnx\python-api-examples\kws-with-custom-denoise.py ^
+  --wave-filename .\wav\8.wav ^
+  --tokens=.\sherpa-onnx-kws-zipformer-wenetspeech-3.3M-2024-01-01\tokens.txt ^
+  --encoder=.\sherpa-onnx-kws-zipformer-wenetspeech-3.3M-2024-01-01\encoder-epoch-12-avg-2-chunk-16-left-64.int8.onnx ^
+  --decoder=.\sherpa-onnx-kws-zipformer-wenetspeech-3.3M-2024-01-01\decoder-epoch-12-avg-2-chunk-16-left-64.onnx ^
+  --joiner=.\sherpa-onnx-kws-zipformer-wenetspeech-3.3M-2024-01-01\joiner-epoch-12-avg-2-chunk-16-left-64.int8.onnx ^
+  --keywords-file=.\keywords.txt ^
+  --num-threads 2 ^
+  --keywords-threshold 0.25 ^
+  --keywords-score 1.0 ^
+  --num-trailing-blanks 1
